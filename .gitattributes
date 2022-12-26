@@ -1,3 +1,4 @@
-*.js linguist-vendored=True
-*.json linguist-vendored=True
-*.less linguist-vendored=True
+*.js linguist-vendored=False
+*.json linguist-vendored=False
+*.less linguist-vendored=False
+*.css linguist-vendored=True
