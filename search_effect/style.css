@@ -1,0 +1,45 @@
+body{
+    background-color: blueviolet;
+}
+div{
+    display: grid; 
+    place-items: 
+    center; margin-top: 250px
+}
+.search{
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 20px;
+    transition-duration: 500ms;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    border: 1px solid #FF9950;
+    overflow: hidden;
+    background-image: url(https://img.icons8.com/sf-regular/512/search.png);
+    background-repeat: no-repeat;
+    background-size: 27px;
+    background-position: 45% 50%;
+    background-color: blueviolet;
+}
+.search:hover{
+    border: 1px solid #FF9950;
+}
+.search:focus{
+    width: 200px;
+    cursor: text;
+    padding-left: 40px;
+    color: black;
+    border-radius: 55px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #FF9950;
+    font-size: large;
+    background: url(https://img.icons8.com/sf-regular/512/search.png) no-repeat;
+    background-size: 22px;
+    background-position: 10px 50%;
+}

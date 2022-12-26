@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: black;
+}
+ul{
+    position: relative
+}
+ul li{
+    list-style: none;
+    text-align: center;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 3em;
+    padding: 5px 20px;
+    display: inline-flex;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+ul:hover li a{
+    color: #0002;
+}
+
+ul li:hover a{
+    color: #000;
+    background: transparent;
+}
+
+ul li a:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 500px;
+    transition: letter-spacing 0.5s, left 0.5s;
+}
+
+ul li a:hover:before{
+    content: attr(data-text);
+    opacity: 1;
+    left: 50%;
+    letter-spacing: 10px;
+    width: 1800px;
+    height: 1800px;
+}
+
+ul li:nth-child(6n+1) a:before{
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg,#4158D0 0%,#C850C0 46%, #FFCC70 100%);;
+}
+ul li:nth-child(6n+2) a:before{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg,#0093E9 0%,#80D0C7 100%);;
+}
+ul li:nth-child(6n+3) a:before{
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg,#00DBDE 0%,#FC00FF 100%);;
+}
+ul li:nth-child(6n+4) a:before{
+    background-color: #84FAB0;
+    background-image: linear-gradient(120deg,#84FAB0 0%,#8FD3F4 100%);;
+}
+ul li:nth-child(6n+5) a:before{
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg,#FBAB7E 0%,#F7CE68 100%);;
+}
+ul li:nth-child(6n+6) a:before{
+    background-color: #FFFFFF;
+    background-image: linear-gradient(180deg,#FFFFFF 0%,#6284FF 50%, #FF0000 100%);;
+}
