@@ -2,3 +2,4 @@
 *.json linguist-vendored=False
 *.less linguist-vendored=False
 *.css linguist-vendored=True
+*.html linguist-vendored=False
